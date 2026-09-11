@@ -41,27 +41,20 @@ hr {
  
 .grupoComandos {
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
 }
  
 .cartãoComando {
-    width: calc(25% - 20px);
-    border: 1px solid black;
-    border-radius: 25px;
-    padding: 10px 5px;
-    transition: 150ms;
-    background-color: rgb(47, 0, 255);
+   
+    border: 1px #ff0000
+    border-radius: 20px;
+    width: 85vw;
+    height: 20vh;
 }
  
-.cartãoComando:hover {
-    background-color: blue;
-    border: 1px solid black;
-    color: whitesmoke;
-    scale: 105%;
-    transform: translateY(-5%);
-    box-shadow: -1px -1px -1px -1px blueviolet -1px -1px -1px -1px blueviolet;
+@media screen and (min-width: 768px) {
+    .grupoComandos {
+       flex-direction: row;
+    }
 }
- 
