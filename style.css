@@ -1,60 +1,32 @@
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
- 
-body {
-    font-size: 22px;
-    font-family: monospace;
-    background-color: blue;
-    color: white
-}
- 
-header {
-    height: 8vh;
-    background-color: blueviolet;
-}
- 
-main {
-    height: 85vh;
-    background-color: blue;
-    color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    margin-block: auto;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
- 
-}
- 
-footer {
-    height: 7vh;
-    background-color: blueviolet;
-    color: whitesmoke;
-}
- 
-hr {
-    height: 1px;
-    background-color: white;
-}
- 
+
 .grupoComandos {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
- 
-.cartãoComando {
-   
-    border: 1px #ff0000
-    border-radius: 20px;
-    width: 85vw;
-    height: 20vh;
+
+.cartaoComando {
+  border: 1px solid #ff0000;
+  border-radius: 20px;
+  width: 85vw;
+  height: 20vh;
 }
- 
+
 @media screen and (min-width: 768px) {
-    .grupoComandos {
-       flex-direction: row;
-    }
+  .grupoComandos {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .cartaoComando {
+    border: 1px solid #ff0000;
+    border-radius: 20px;
+    width: calc(25% - 15px);
+    min-height: fit-content;
+  }
 }
+ 
