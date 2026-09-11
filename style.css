@@ -1,0 +1,67 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+ 
+body {
+    font-size: 22px;
+    font-family: monospace;
+    background-color: blue;
+    color: white
+}
+ 
+header {
+    height: 8vh;
+    background-color: blueviolet;
+}
+ 
+main {
+    height: 85vh;
+    background-color: blue;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    margin-block: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+ 
+}
+ 
+footer {
+    height: 7vh;
+    background-color: blueviolet;
+    color: whitesmoke;
+}
+ 
+hr {
+    height: 1px;
+    background-color: white;
+}
+ 
+.grupoComandos {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+ 
+.cartãoComando {
+    width: calc(25% - 20px);
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 10px 5px;
+    transition: 150ms;
+    background-color: rgb(47, 0, 255);
+}
+ 
+.cartãoComando:hover {
+    background-color: blue;
+    border: 1px solid black;
+    color: whitesmoke;
+    scale: 105%;
+    transform: translateY(-5%);
+    box-shadow: -1px -1px -1px -1px blueviolet -1px -1px -1px -1px blueviolet;
+}
+ 
