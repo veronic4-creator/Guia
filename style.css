@@ -6,6 +6,7 @@
 .grupoComandos {
   display: flex;
   flex-direction: column;
+  align-items: center; /* centraliza os cartões */
   gap: 15px;
 }
 
@@ -13,20 +14,20 @@
   border: 1px solid #ff0000;
   border-radius: 20px;
   width: 85vw;
-  height: 20vh;
+  height:auto;
 }
 
-@media screen and (min-width: 768px) {
-  .grupoComandos {
-    flex-direction: row;
-    flex-wrap: wrap;
+@media (max-width: 480px) {
+  .cartaoComando {
+    width: 95vw; /* ocupa quase toda a tela */
+    font-size: 0.9rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.85rem;
   }
 
-  .cartaoComando {
-    border: 1px solid #ff0000;
-    border-radius: 20px;
-    width: calc(25% - 15px);
-    min-height: fit-content;
-  }
 }
  
