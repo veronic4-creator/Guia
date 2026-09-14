@@ -3,6 +3,15 @@
   padding: 0px;
 }
 
+/* Fundo da página */
+
+body {
+background-color: #000;
+color: #fff;
+font-family: Arial, sans-serif;
+padding: 40px;
+}
+
 .grupoComandos {
   display: flex;
   flex-direction:column;
@@ -11,16 +20,17 @@
 }
 
 .cartaoComando {
-  border: 1px solid #ff0000;
+  border: 1px solid #ff00c8e0;
   border-radius: 20px;
   width: 85vw;
-  height:auto;
+  height: 10vh
 }
 
 @media (max-width: 480px) {
   .cartaoComando {
     width: 95vw; /* ocupa quase toda a tela */
     font-size: 0.9rem;
+    padding: 15px 20px;
   }
   h3 {
     font-size: 1rem;
@@ -30,5 +40,33 @@
   }
 
 }
- 
+.icone {
+  height: 30px;
+  width:30px
+
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    font-size: x-large;
+
+  }
+}
+
+  @media only screen and (min-width: 768px) {
+    .grupoComandos {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+  .cartaoComando {
+    width: calc(50vw - 30px);
+  }
+
+  .icone {
+    height: 40px;
+    width:40px
+
+  }
+}
  
