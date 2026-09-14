@@ -5,8 +5,8 @@
 
 .grupoComandos {
   display: flex;
-  flex-direction:row
-  align-items:row /* centraliza os cartões */
+  flex-direction:row;
+  align-items:center; /* centraliza os cartões */
   gap: 15px;
 }
 
