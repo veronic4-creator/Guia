@@ -5,7 +5,7 @@
 
 .grupoComandos {
   display: flex;
-  flex-direction:row;
+  flex-direction:column;
   align-items:center; /* centraliza os cartões */
   gap: 15px;
 }
